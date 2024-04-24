@@ -1,7 +1,116 @@
 .homeMain {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
   width: 100%;
   height: 100%;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.svg {
+  margin-top: 25px;
+  height: 200px;
+}
+
+.svg2 {
+  height: 75px;
+  margin-bottom: 30px;
+}
+
+.homeHead {
+  font-family: "Montserrat", sans-serif;
+  color: #3b4e55;
+  width: 80%;
+  text-align: center;
+}
+
+.homeSubHead {
+  border-bottom: 2px solid #3b4e55;
+  border-top: 2px solid #3b4e55;
+  padding: 20px 0;
+}
+
+.homeSubHead,
+.homeGetStartedText {
+  width: 80%;
+  max-width: 800px;
+  color: #3b4e55;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: "Platypi", serif;
+}
+
+.homeGetStartedText {
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.button {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+  margin-bottom: 10px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+@media screen and (min-width: 800px) {
+  .svg {
+    height: 300px;
+  }
+  .homeHead {
+    font-size: 2em;
+  }
+
+  .homeSubHead {
+    font-size: 1.3em;
+  }
+
+  .homeGetStartedText {
+    font-size: 1.3em;
+  }
+
+  .svg2 {
+    height: 150px;
+  }
 }

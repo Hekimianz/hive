@@ -3,7 +3,7 @@ import logo from "../assets/hiveLogo.png";
 function TopNav() {
   return (
     <div className={styles.topNavCont}>
-      <img className={styles.logo} src={logo} />
+      <img className={styles.logo} src={logo} alt="logo" />
     </div>
   );
 }
