@@ -1,4 +1,4 @@
-.homeMain {
+.signUpMainCont {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,43 +8,30 @@
   padding-bottom: 50px;
 }
 
-.svg {
-  margin-top: 25px;
-  height: 200px;
+.signUpInput {
+  margin-top: 20px;
 }
 
-.svg2 {
-  height: 75px;
-  margin-bottom: 30px;
+.signUpSvg {
+  margin: 20px 0;
+  width: 200px;
 }
 
-.homeHead {
+.alreadyMemberSpan {
+  opacity: 0.7;
   font-family: "Montserrat", sans-serif;
-  color: #3b4e55;
-  width: 80%;
-  text-align: center;
+  font-size: 0.7em;
+  transition: 0.2s all;
+  margin-top: 5px;
 }
 
-.homeSubHead {
-  border-bottom: 2px solid #3b4e55;
-  border-top: 2px solid #3b4e55;
-  padding: 20px 0;
+.alreadyMemberLink {
+  text-decoration: none;
+  color: #c85000;
 }
 
-.homeSubHead,
-.homeGetStartedText {
-  width: 80%;
-  max-width: 800px;
-  color: #3b4e55;
-  text-align: center;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: "Platypi", serif;
-}
-
-.homeGetStartedText {
-  margin-top: -10px;
-  margin-bottom: 20px;
+.alreadyMemberSpan:hover {
+  transform: scale(1.1);
 }
 
 .button {
@@ -75,7 +62,7 @@
   touch-action: manipulation;
   vertical-align: baseline;
   width: auto;
-  margin-bottom: 10px;
+  margin-top: 20px;
 }
 
 .button:hover,
@@ -93,44 +80,52 @@
   box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
   transform: translateY(0);
 }
-
-.signInSpan {
-  opacity: 0.7;
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.7em;
-  transition: 0.2s all;
+.button:disabled {
+  background-color: #f8b589;
+  cursor: not-allowed;
+}
+.googleButton {
+  background-color: #fa6400;
+  border: none;
+  border-radius: 0.25rem;
+  height: 48px;
+  cursor: pointer;
+  transition: all 0.2s;
 }
 
-.signInLink {
-  text-decoration: none;
-  color: #c85000;
+.googleButton:hover,
+.googleButton:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
 }
 
-.signInSpan:hover {
-  transform: scale(1.1);
+.googleButton:hover {
+  transform: translateY(-1px);
 }
 
-@media screen and (min-width: 800px) {
-  .svg {
-    height: 300px;
-  }
-  .homeHead {
-    font-size: 2em;
-  }
+.googleIcon {
+  height: 100%;
+}
 
-  .homeSubHead {
-    font-size: 1.3em;
-  }
+.signUpButtons {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 10px;
+}
 
-  .homeGetStartedText {
-    font-size: 1.3em;
-  }
+.orSpan {
+  color: #3b4e55;
+  font-size: 1.3em;
+  padding-bottom: 15px;
+}
 
-  .svg2 {
-    height: 150px;
-  }
+.inputTitle {
+  color: #3b4e55;
+  font-size: 1.2em;
+  margin: 0;
+}
 
-  .signInSpan {
-    font-size: 1em;
-  }
+.sexChoices {
+  margin-top: 20px;
 }

@@ -12,4 +12,21 @@
 .logo {
   width: 60%;
   max-width: 300px;
+  cursor: pointer;
+}
+
+.accountIcon {
+  color: #3b4e55;
+  font-size: 2em;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.32);
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+.accountIcon:hover {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.32);
+  transform: scale(1.1);
 }
